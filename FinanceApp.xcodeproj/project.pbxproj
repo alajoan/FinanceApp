@@ -10,12 +10,12 @@
 		7CA2A0FE287A3BE700F3D839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A0FD287A3BE700F3D839 /* AppDelegate.swift */; };
 		7CA2A100287A3BE700F3D839 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A0FF287A3BE700F3D839 /* SceneDelegate.swift */; };
 		7CA2A102287A3BE700F3D839 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A101287A3BE700F3D839 /* ViewController.swift */; };
-		7CA2A105287A3BE700F3D839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA2A103287A3BE700F3D839 /* Main.storyboard */; };
 		7CA2A107287A3BE800F3D839 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA2A106287A3BE800F3D839 /* Assets.xcassets */; };
 		7CA2A10A287A3BE800F3D839 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA2A108287A3BE800F3D839 /* LaunchScreen.storyboard */; };
 		7CA2A115287A3BE800F3D839 /* FinanceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A114287A3BE800F3D839 /* FinanceAppTests.swift */; };
 		7CA2A11F287A3BE800F3D839 /* FinanceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A11E287A3BE800F3D839 /* FinanceAppUITests.swift */; };
 		7CA2A121287A3BE800F3D839 /* FinanceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A120287A3BE800F3D839 /* FinanceAppUITestsLaunchTests.swift */; };
+		7CA2A135287A517100F3D839 /* AppLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2A134287A517100F3D839 /* AppLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		7CA2A0FD287A3BE700F3D839 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA2A0FF287A3BE700F3D839 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7CA2A101287A3BE700F3D839 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CA2A104287A3BE700F3D839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CA2A106287A3BE800F3D839 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA2A109287A3BE800F3D839 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA2A10B287A3BE800F3D839 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		7CA2A11A287A3BE800F3D839 /* FinanceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2A11E287A3BE800F3D839 /* FinanceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppUITests.swift; sourceTree = "<group>"; };
 		7CA2A120287A3BE800F3D839 /* FinanceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CA2A134287A517100F3D839 /* AppLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		7CA2A0FC287A3BE700F3D839 /* FinanceApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CA2A12D287A4FF900F3D839 /* Components */,
 				7CA2A0FD287A3BE700F3D839 /* AppDelegate.swift */,
 				7CA2A0FF287A3BE700F3D839 /* SceneDelegate.swift */,
 				7CA2A101287A3BE700F3D839 /* ViewController.swift */,
-				7CA2A103287A3BE700F3D839 /* Main.storyboard */,
 				7CA2A106287A3BE800F3D839 /* Assets.xcassets */,
 				7CA2A108287A3BE800F3D839 /* LaunchScreen.storyboard */,
 				7CA2A10B287A3BE800F3D839 /* Info.plist */,
@@ -125,6 +125,46 @@
 				7CA2A120287A3BE800F3D839 /* FinanceAppUITestsLaunchTests.swift */,
 			);
 			path = FinanceAppUITests;
+			sourceTree = "<group>";
+		};
+		7CA2A12D287A4FF900F3D839 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7CA2A133287A515500F3D839 /* AppRecipient */,
+				7CA2A131287A504100F3D839 /* AppTextfield */,
+				7CA2A130287A503800F3D839 /* AppButton */,
+				7CA2A12F287A501500F3D839 /* AppLabel */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7CA2A12F287A501500F3D839 /* AppLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7CA2A134287A517100F3D839 /* AppLabel.swift */,
+			);
+			path = AppLabel;
+			sourceTree = "<group>";
+		};
+		7CA2A130287A503800F3D839 /* AppButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppButton;
+			sourceTree = "<group>";
+		};
+		7CA2A131287A504100F3D839 /* AppTextfield */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppTextfield;
+			sourceTree = "<group>";
+		};
+		7CA2A133287A515500F3D839 /* AppRecipient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppRecipient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +273,6 @@
 			files = (
 				7CA2A10A287A3BE800F3D839 /* LaunchScreen.storyboard in Resources */,
 				7CA2A107287A3BE800F3D839 /* Assets.xcassets in Resources */,
-				7CA2A105287A3BE700F3D839 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +299,7 @@
 			files = (
 				7CA2A102287A3BE700F3D839 /* ViewController.swift in Sources */,
 				7CA2A0FE287A3BE700F3D839 /* AppDelegate.swift in Sources */,
+				7CA2A135287A517100F3D839 /* AppLabel.swift in Sources */,
 				7CA2A100287A3BE700F3D839 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7CA2A103287A3BE700F3D839 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CA2A104287A3BE700F3D839 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7CA2A108287A3BE800F3D839 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +476,6 @@
 				INFOPLIST_FILE = FinanceApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +503,6 @@
 				INFOPLIST_FILE = FinanceApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
